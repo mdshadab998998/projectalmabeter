@@ -1,17 +1,13 @@
 const express = require("express"); // Import the Express framework
 const path = require("path"); // Import the path module for working with file paths
-
-//SCHEMA
 const schema = require("./models/subscribers"); // Import the subscriber model
 const { error } = require("console"); // Import the 'error' object from the console module
 
 const app = express(); // Create an Express application
 
-//PARSE INCOMING JSON DATA
 app.use(express.json()); // Middleware to parse incoming JSON data
 app.use(express.urlencoded({ extended: false })); // Middleware to parse incoming URL-encoded data
 
-//HOME PAGE
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/index.html")); // Serve the index.html file as the home page
 });

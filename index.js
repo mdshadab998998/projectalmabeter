@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: false })); // Parsing URL-encoded bodies
 
 // Connecting to the database
 const DATABASE_URL =
-"mongodb+srv://ojhaparth:test123@cluster0.9xedsar.mongodb.net/";
+"mongodb+srv://mdshadabkhan4256:oBb6nu0M8FCanwlQ@cluster0.aarbpdf.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(DATABASE_URL, {
 useNewUrlParser: true,
